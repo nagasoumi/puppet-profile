@@ -1,8 +1,8 @@
-class profile::nginx
+class profile::nginx1
 {
-  include ::nginx 
+  include ::nginx1 
   
-  ::nginx::vhost { $facts['fqdn']: 
+  ::nginx1::vhost { $facts['fqdn']: 
    port           => $vhost['port'],
   server_aliases => $vhost['server_aliases'],
 }
